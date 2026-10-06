@@ -27,21 +27,21 @@ tokio = { version = "1.35", features = ["full"] }
 # Serialization
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
-toml = "0.8"
+toml = "1.1"
 
 # Error handling
 anyhow = "1.0"
-thiserror = "1.0"
+thiserror = "2.0"
 
 # Logging
 tracing = "0.1"
 tracing-subscriber = { version = "0.3", features = ["env-filter"] }
 
 # HTTP for downloads
-reqwest = { version = "0.11", features = ["stream", "json"] }
+reqwest = { version = "0.13", features = ["stream", "json"] }
 
 # Crypto for checksums
-sha2 = "0.10"
+sha2 = "0.11"
 hex = "0.4"
 
 # Time
@@ -51,7 +51,7 @@ chrono = { version = "0.4", features = ["serde"] }
 clap = { version = "4.4", features = ["derive"] }
 
 # Progress bars
-indicatif = "0.17"
+indicatif = "0.18"
 
 # Async traits
 async-trait = "0.1"
@@ -63,7 +63,7 @@ futures-util = "0.3"
 uuid = { version = "1.6", features = ["serde", "v4"] }
 
 # Directory management
-dirs = "5.0"
+dirs = "7.0"
 
 # S3 storage (optional)
 aws-config = { version = "1.1", optional = true }
